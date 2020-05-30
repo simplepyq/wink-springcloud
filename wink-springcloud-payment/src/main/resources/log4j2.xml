@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" monitorInterval="30">
-  <Appenders>
-    <Console name="Console" target="SYSTEM_OUT">
-      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread] [%c] - %X{applicationId} - %msg%n"/>
-    </Console>
-    
-    <RollingFile name="RollingFile" fileName="E:/logs/wink-springcloud-payment.log"
-        filePattern="E:/logs/wink-springcloud-payment.log-%d{yyyy-MM-dd}.log.gz" ignoreExceptions="false">
-      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread] [%c] - %X{applicationId} - %msg%n"/>
-      <TimeBasedTriggeringPolicy />
-    </RollingFile>
-  </Appenders>
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread] [%c] - %X{applicationId} - %msg%n"/>
+        </Console>
 
-  <Loggers>
-    <Root level="INFO">
-      <AppenderRef ref="Console"/>
-      <AppenderRef ref="RollingFile"/>
-    </Root>
-  </Loggers>
+        <RollingFile name="RollingFile" fileName="E:/logs/wink-springcloud-payment.log"
+                     filePattern="E:/logs/wink-springcloud-payment.log-%d{yyyy-MM-dd}.log.gz" ignoreExceptions="false">
+            <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%level] [%thread] [%c] - %X{applicationId} - %msg%n"/>
+            <TimeBasedTriggeringPolicy/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="Console"/>
+            <AppenderRef ref="RollingFile"/>
+        </Root>
+    </Loggers>
 </Configuration>
