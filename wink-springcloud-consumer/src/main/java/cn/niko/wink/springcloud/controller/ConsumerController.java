@@ -16,7 +16,7 @@ import org.springframework.web.client.RestTemplate;
 @Log4j2
 public class ConsumerController {
 
-    private static final String URI = "http://localhost:8001";
+    private static final String URI = "http://wink-springcloud-payment";
 
     @Autowired
     private RestTemplate restTemplate;
