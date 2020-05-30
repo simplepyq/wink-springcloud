@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>wink-springcloud-payment</artifactId>
+    <artifactId>wink-springcloud-payment-node8002</artifactId>
 
     <dependencies>
         <dependency>
@@ -64,6 +64,4 @@
             <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
     </dependencies>
-
-
 </project>
