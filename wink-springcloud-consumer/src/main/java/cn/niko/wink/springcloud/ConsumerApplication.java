@@ -1,10 +1,11 @@
 package cn.niko.wink.springcloud;
 
+import cn.niko.wink.rule.BalancerRuleConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
 import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.ribbon.RibbonClient;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestTemplate;
@@ -15,9 +16,9 @@ import org.springframework.web.client.RestTemplate;
  * @since 2020/5/30 11:21
  */
 @SpringBootApplication
-@Configuration
 @EnableEurekaClient
-@EnableDiscoveryClient
+@RibbonClient(name = "wink-springcloud-payment", configuration = BalancerRuleConfig.class)
+@Configuration
 public class ConsumerApplication {
 
     public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class ConsumerApplication {
 
     @Bean
     @LoadBalanced
-    public RestTemplate restTemplate(){
+    public RestTemplate restTemplate() {
         return new RestTemplate();
     }
 }
