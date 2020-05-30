@@ -7,7 +7,8 @@
     <modules>
         <module>wink-springcloud-payment</module>
         <module>wink-springcloud-consumer</module>
-        <module>wink-spirngcloud-eureka</module>
+        <module>wink-springcloud-eureka-node7001</module>
+        <module>wink-springcloud-eureka-node7002</module>
     </modules>
     <packaging>pom</packaging>
     <name>wink-springcloud</name>
