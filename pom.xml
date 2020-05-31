@@ -14,6 +14,7 @@
         <module>wink-springcloud-consumer-consul</module>
         <module>wink-springcloud-consumer-openfeign</module>
         <module>wink-springcloud-payment-consul-hystrix-node8004</module>
+        <module>wink-springcloud-consumer-hystrix-openfeign</module>
     </modules>
     <packaging>pom</packaging>
     <name>wink-springcloud</name>

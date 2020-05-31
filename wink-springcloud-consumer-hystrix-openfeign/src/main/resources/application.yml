@@ -1,0 +1,35 @@
+server:
+  port: 8014
+
+spring:
+  application:
+    name: wink-springcloud-consumer
+
+  cloud:
+    consul:
+      host: 192.168.124.7
+      port: 8500
+      discovery:
+        register: false
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.124.7:3306/?useUnicode=true&charcterEncoding=utf-8&useSSL=false&serverTimezone=GMT
+    username: root
+    password: pyq7588479
+
+ribbon:
+  #指的是建立连接所用的时间，适用于网络状况正常的情况下，两端连接所用的实际
+  ReadTimeout: 5000
+  #指的是建立连接后从服务器读取到可用资源所用的时间
+  ConnectTimeout: 5000
+
+logging:
+  level:
+    #feign日志以什么级别监控那个接口
+    cn.niko.wink.springcloud.service.PaymentService: debug
+
+feign:
+  hystrix:
+    enabled: true
