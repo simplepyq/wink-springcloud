@@ -1,1 +1,23 @@
 # Created by .ignore support plugin (hsz.mobi)
+.idea/
+wink-springcloud-consumer-consul/src/test/
+wink-springcloud-consumer-consul/target/
+wink-springcloud-consumer-consul/wink-springcloud-consumer-consul.iml
+wink-springcloud-consumer/src/test/
+wink-springcloud-consumer/target/
+wink-springcloud-consumer/wink-springcloud-consumer.iml
+wink-springcloud-eureka-node7001/src/test/
+wink-springcloud-eureka-node7001/target/
+wink-springcloud-eureka-node7001/wink-springcloud-eureka-node7001.iml
+wink-springcloud-eureka-node7002/src/test/
+wink-springcloud-eureka-node7002/target/
+wink-springcloud-eureka-node7002/wink-springcloud-eureka-node7002.iml
+wink-springcloud-payment-consul-node8003/src/test/
+wink-springcloud-payment-consul-node8003/target/
+wink-springcloud-payment-consul-node8003/wink-springcloud-payment-consul-node8003.iml
+wink-springcloud-payment-node8001/src/test/
+wink-springcloud-payment-node8001/target/
+wink-springcloud-payment-node8001/wink-springcloud-payment-node8001.iml
+wink-springcloud-payment-node8002/src/test/
+wink-springcloud-payment-node8002/target/
+wink-springcloud-payment-node8002/wink-springcloud-payment-node8002.iml
