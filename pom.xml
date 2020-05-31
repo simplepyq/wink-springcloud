@@ -10,6 +10,8 @@
         <module>wink-springcloud-eureka-node7002</module>
         <module>wink-springcloud-payment-node8001</module>
         <module>wink-springcloud-payment-node8002</module>
+        <module>wink-springcloud-payment-consul-node8003</module>
+        <module>wink-springcloud-consumer-consul</module>
     </modules>
     <packaging>pom</packaging>
     <name>wink-springcloud</name>
