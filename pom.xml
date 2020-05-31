@@ -13,6 +13,7 @@
         <module>wink-springcloud-payment-consul-node8003</module>
         <module>wink-springcloud-consumer-consul</module>
         <module>wink-springcloud-consumer-openfeign</module>
+        <module>wink-springcloud-payment-consul-hystrix-node8004</module>
     </modules>
     <packaging>pom</packaging>
     <name>wink-springcloud</name>
